@@ -7,15 +7,13 @@ This is the repository for R scripts used in the analysis of 16S rRNA and shotgu
 To examine the impact of fecal filtrate transplantation (FFT) on prevention of post-weaning diarreha in piglets.
 
 ## Study design
-![image](https://github.com/mpirolo/Pilot-repository-16S/assets/54710620/c3fb1634-d19b-4120-b716-2d2f963cc0e7)
+![FFT trial x paper](https://github.com/user-attachments/assets/5e6c3287-403a-40c6-8bb7-f340bb63b65b)
 
 ## Repository organization
 ### Data
 This folder contains all datafiles:
-- **ps_FMT.rds**: phyloseq object in R data format for the analysis
-- **metadata.tsv**: tab-separated values file with relevant metadata for the analysis
-### R scripts
-This folder contains all R scripts:
-- **composition.R**: R script for visualization of taxonomic composition
-- **diversity.R**: R script for alpha- and beta-diversity analysis
-- **DESeq2.R**: R script for differential abundance analysis using [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html)
+- **ps_16S.rds**: phyloseq object in R data format for the 16S rRNA data analysis
+- **ps_MAG.rds**: phyloseq object in R data format for the MAG data analysis
+### R script
+This folder contains the R script:
+- **FFT_study_analysis.R**: R script for visualization of taxonomic composition, alpha- and beta-diversity analysis, and differential abundance analysis using [LEfSe](https://www.bioconductor.org/packages/release/bioc/html/lefser.html)
